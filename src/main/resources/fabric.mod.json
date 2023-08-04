@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "uranium",
+	"version": "${version}",
+	"name": "Uranium",
+	"description": "A performance mod that helps optimize small things",
+	"authors": [
+		"MohsenEMX"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/uranium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mohsenemx.uranium.UraniumMod"
+		],
+		"client": [
+			"net.mohsenemx.uranium.UraniumMod"
+		],
+		"fabric-datagen": [
+			"net.mohsenemx.uranium.UraniumModDataGenerator"
+		]
+	},
+	"mixins": [
+		"uranium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
