@@ -2,6 +2,8 @@ package net.mohsenemx.uranium;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.mohsenemx.uranium.item.ModItemGroups;
+import net.mohsenemx.uranium.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,6 +13,7 @@ public class UraniumMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
 	}
 }

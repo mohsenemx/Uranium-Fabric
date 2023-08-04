@@ -19,7 +19,7 @@
 			"net.mohsenemx.uranium.UraniumMod"
 		],
 		"client": [
-			"net.mohsenemx.uranium.UraniumMod"
+			"net.mohsenemx.uranium.UraniumModClient"
 		],
 		"fabric-datagen": [
 			"net.mohsenemx.uranium.UraniumModDataGenerator"
